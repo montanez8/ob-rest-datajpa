@@ -76,6 +76,7 @@ public class BookController {
     public ResponseEntity<Void> deleteAllBooks() {//se elimina todos los libros
         repository.deleteAll();
         return ResponseEntity.noContent().build();
+
     }
 
 }
