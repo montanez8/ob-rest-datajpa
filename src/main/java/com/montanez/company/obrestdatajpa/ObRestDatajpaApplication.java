@@ -14,7 +14,7 @@ public class ObRestDatajpaApplication {
 		ApplicationContext context = SpringApplication.run(ObRestDatajpaApplication.class, args);
 		BookRepository bookRepository = context.getBean(BookRepository.class);
 		//crear un libro
-		Book book = new Book(null, "El señor de los anillos", "J.R.R Tolkien", 1200, 2000.0, null);
+		Book book = new Book(null, "El señor de los anillos", "J.R.R Tolkien", 1200, 1999.0, null);
 		Book book2 = new Book(null, "El señor de los anillos v2", "J.R.R Tolkien", 2000, 1200.0, null);
 
 		//guardar un libro
