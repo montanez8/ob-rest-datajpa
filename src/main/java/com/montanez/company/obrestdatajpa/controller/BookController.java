@@ -9,7 +9,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController
@@ -76,7 +75,6 @@ public class BookController {
     public ResponseEntity<Void> deleteAllBooks() {//se elimina todos los libros
         repository.deleteAll();
         return ResponseEntity.noContent().build();
-
-    }
+     }
 
 }
